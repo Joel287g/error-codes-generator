@@ -1,9 +1,23 @@
-# Change Log
+## [0.1.0] - 2025-10-31 - [@Joel287g](https://github.com/Joel287g)
 
-All notable changes to the "web-coding-solution" extension will be documented in this file.
+### Added
+- Add 'erg' snippet for ERROR_GENERATOR keyword
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+### Changed
+- Updates README to document the new snippet and modifies package.json to register the snippet for supported languages.
 
-## [Unreleased]
+## [0.0.1] - 2025-10-31 - [@Joel287g](https://github.com/Joel287g)
+
+### Added
+- Added MIT LICENSE file
+- Added icon asset for extension branding.
+
+### Changed
+- Updated package.json with publisher, repository, license, homepage, bugs, keywords, icon, preview, and improved categories.
+
+## [0.0.1] - 2025-10-31 - [@Joel287g](https://github.com/Joel287g)
+
+### Added
 
 - Initial release
+
