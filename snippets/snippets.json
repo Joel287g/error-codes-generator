@@ -1,0 +1,9 @@
+{
+  "Error Generator": {
+    "prefix": "erg",
+    "body": [
+      "\"ERROR_GENERATOR\""
+    ],
+    "description": "Insert ERROR_GENERATOR"
+  }
+}

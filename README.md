@@ -8,10 +8,11 @@
 
 - **Generate Error Codes:** Automatically create unique and standardized error codes.
 - **Format Error Codes:** Ensure all error codes in your project adhere to a consistent format.
+- **Snippet for Error Generator:** Use the `erg` snippet to quickly insert the `"ERROR_GENERATOR"` keyword.
 
 ## Usage
 
-To generate an error code, simply type the keyword `ERROR_GENERATOR` in the location where you want the code to be inserted. The extension will automatically replace it with a generated nomenclature.
+To generate an error code, you can use the `erg` snippet to insert the `"ERROR_GENERATOR"` keyword, or manually type it. The extension will automatically replace the keyword with a generated nomenclature.
 
 The error code is created based on the file path, with an incremental counter for each error in the file. For example, for a file located at `src/core/utils.ts`, the generated codes would be:
 
