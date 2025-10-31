@@ -1,3 +1,8 @@
+## [0.1.1] - 2025-10-31 - [@Joel287g](https://github.com/Joel287g)
+
+### Changed
+- Enhanced the getNomenclature function to better handle file paths when the 'src' folder is missing by extracting the project name from workspace folders and adjusting path splitting logic accordingly.
+
 ## [0.1.0] - 2025-10-31 - [@Joel287g](https://github.com/Joel287g)
 
 ### Added

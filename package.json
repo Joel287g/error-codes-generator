@@ -2,7 +2,7 @@
   "name": "error-codes-generator",
   "displayName": "Error codes generator",
   "description": "`Error codes generator` is a powerful VS Code extension designed to streamline your development workflow by providing tools for generating, formatting, and managing error codes and nomenclatures directly within your editor. This extension helps maintain consistency and clarity in your codebase, especially in large projects.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Joel287g",
   "publisher": "Joel287g",
   "repository": {

@@ -1,17 +1,32 @@
 export function getNomenclature(vscode: any, activeEditor: any) {
   let fileName = activeEditor.document.fileName;
+  let workspaceFolders = vscode.workspace.workspaceFolders;
   let splitFileName: any = fileName.split("\\") ?? fileName.split("/");
   let srcPosition = splitFileName.indexOf("src");
+  let rootPath = "";
+  let projectName = "";
+
+  if (workspaceFolders && workspaceFolders.length > 0) {
+    rootPath = workspaceFolders[0].uri.fsPath;
+  }
+
+  if (rootPath) {
+    projectName =
+      (rootPath.split("\\").pop() || rootPath.split("/").pop()) ?? "";
+  }
 
   splitFileName.splice(0, srcPosition + 1);
 
   const lastPosition = splitFileName.length - 1;
 
   if (srcPosition === -1) {
-    vscode.window.showInformationMessage(
-      "No 'src' folder found in the file path."
-    );
-    return;
+    splitFileName.findIndex((element: string) => {
+      if (element === projectName) {
+        srcPosition = splitFileName.indexOf(element);
+      }
+    });
+
+    splitFileName.splice(0, srcPosition + 1);
   }
 
   for (const element of splitFileName) {
