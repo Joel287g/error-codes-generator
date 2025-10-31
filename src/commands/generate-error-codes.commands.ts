@@ -71,14 +71,9 @@ export function generateErrorCodes() {
       );
 
       //? Formateamos el contador a un string de 3 digitos
-      let formattedCounter = null;
-
-      if (MAX_VALUE && MAX_VALUE !== null) {
-        counter = MAX_VALUE + 1;
-        formattedCounter = counter.toString().padStart(3, "0");
-      } else {
-        formattedCounter = String(counter++).padStart(3, "0");
-      }
+      let formattedCounter = String(
+        MAX_VALUE && MAX_VALUE !== null ? counter++ + MAX_VALUE : counter++
+      ).padStart(3, "0");
 
       //? Reemplazamos los valores de la posicion por la nomenclatura
       editBuilder.replace(RANGE, `${NOMENCLATURE}-${formattedCounter}`);
