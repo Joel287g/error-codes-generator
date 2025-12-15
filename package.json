@@ -22,7 +22,7 @@
     "nomenclature"
   ],
   "icon": "src/assets/icon.png",
-  "preview": true,
+  "preview": false,
   "engines": {
     "vscode": "^1.105.0"
   },
